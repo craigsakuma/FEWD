@@ -1,0 +1,40 @@
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+h1 {
+	font-size: 48px;
+	font-weight: 800;
+
+}
+
+
+
+
+
+section {
+    border: 1px solid black;
+
+}
+
+
+
+#landing {
+	background: url("../images/header_bg.jpg") #131e27;
+	background-size: cover;
+	background-color: #cccccc;
+	width: 100%;
+	height: 700px;
+	color: white;
+}
+
+
+#benefits {
+	background-color: #f0efef;
+	color: #606161;
+}
+
+.button {
+
+}
