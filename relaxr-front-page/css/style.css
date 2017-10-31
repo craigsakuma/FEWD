@@ -7,38 +7,14 @@ h1 {
 	font-weight: 800;
 }
 
-.container {
-	width: 960px;
-	margin: 0 auto;
- }
-
-header.logo {
-	font-size: 48px;
-	font-weight: 800;
- 	color: #fff;
-}
-
 a {
 	text-decoration: none;
 }
 
-header {
-	background: url("../images/header_bg.jpg") #131e27;
-	background-size: cover;
-	background-color: #cccccc;
-	padding-top: 32px;
-	width: 100%;
-	height: 700px;
-	color: white;
-}
-
-header h2 {
-	font-size: 48px;
-	text-align: center;
-	color: #fff;
-	margin: 120px 0 90px;
-	font-weight: 600;
-}
+.container {
+	width: 960px;
+	margin: 0 auto;
+ }
 
 .button {
     border-radius: 5px;
@@ -65,10 +41,37 @@ header h2 {
 	color: #fff;
 }
 
+header.logo {
+	font-size: 48px;
+	font-weight: 800;
+ 	color: #fff;
+}
+
+
+header {
+	background: url("../images/header_bg.jpg") #131e27;
+	background-size: cover;
+	background-color: #cccccc;
+	padding-top: 32px;
+	width: 100%;
+	height: 700px;
+	color: white;
+}
+
+header h2 {
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+	margin: 120px 0 90px;
+	font-weight: 600;
+}
+
+
+
 #benefits {
 	background-color: white;
 	color: #606161;
-	padding: 100px 0 80px;
+	padding: 80px 30px 80px;
 }
 
 
@@ -93,12 +96,14 @@ header h2 {
 	background-color: #cccccc;
 	padding-top: 32px;
 	width: 100%;
-	height: 700px;
+	height: 600px;
 	color: white;
 }
 
-#testimonial.container{
-	padding-top: 500px
+#testimonial .container{
+	width: 600px;
+	align-items: center;
+	margin-top: 150px;
 }
 
 #testimonial q{
