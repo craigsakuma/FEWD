@@ -49,25 +49,30 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
      margin-left: 200px;
      margin-right: 200px;
 }
 
-.button {
-    border-radius: 5px;
-    border: black solid 1px;
-    font-weight: 800;
-    padding: 12px 0;
-    width: 300px;
-    height: 60px;
-    font-size: 28px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    vertical-align: middle; 
-    margin: 0 auto;
-  }
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 550;
+  color: #033048;
+  width: auto;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
 
 .yellow {
   background: #f9e42e;
@@ -79,8 +84,40 @@ body {
   color: #fff;
 }
 
+.black {
+  background-color: #121212;
+  color: white;
+}
+
 .gray {
-  background-color: #e3e7ed; 
+  background-color: #e3e7ed;
+  color: #033048; 
+}
+
+.light {
+  font-weight: 300;
+}
+
+.light-bold {
+  font-weight: 550;
+}
+
+.bold {
+  font-weight: 650;
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.cap-first-letter:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
 }
 
 /******************************************
@@ -101,31 +138,6 @@ body {
   margin: auto;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: 800;
-}
-
-h2 {
-  font-size: 40px;
-  width: auto;
-}
-
-h4 {
-  font-size: 30px;
-  font-weight: 900;
-}
-
-a {
-  text-decoration: none;
-}
-
-hr {
-  width: 640px;
-  margin-bottom: 10px;
-}
-
-
 header {
   height: auto;
   width: 960px;
@@ -139,20 +151,22 @@ header {
 
 header .logo{
   font-size: 48px;
-  font-weight: 800;
   color: #fff;
   margin-left: 20px;
   padding: 40px;
 }
 
 #nav{
+  position: relative;
+  bottom: 8px;
+  left: 40px;
   display: inline;
+  padding: 20px;
 }
 
 #nav a {
   color: #f9e42e;
   font-size: 24px;
-  font-weight: 700;
   padding: 20px;
 }
 
@@ -189,12 +203,10 @@ p {
 .read-more {
   text-align: right;
   font-size: 20px;
-  font-weight: 700;
   padding-right: 10px;
 }
 
 h2 .title {
-  font-size: 24px;
   width: 640px;
   margin: auto;
   padding-bottom: 20px;
@@ -205,6 +217,11 @@ main img {
   padding: 0px;
   padding-top: 20px;
   margin: auto;
+}
+
+hr {
+  width: 640px;
+  margin-bottom: 10px;
 }
 
 aside {
@@ -220,21 +237,18 @@ aside {
 
 ul {
   list-style-type: none;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 24px;
   padding: 0px;
   padding-top: 20px;
 }
 
 .categories {
-  color: #121212;
   text-align: left;
   width: inherit;
   padding-top: 20px; 
 }
 
 .about {
-  color: #121212;
   text-align: left;
   width: 240px;  
   padding-top: 40px; 
@@ -249,12 +263,10 @@ ul {
 
 .learn-more {
   text-align: left;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
   padding: 0px;
+  font-weight: 650;
 }
-
-
 
 .ad {
   color: #121212;
@@ -262,8 +274,6 @@ ul {
   width: 240px;
   padding: 0px;
   padding-top: 20px;
-
-
 }
 
 .ad img{
@@ -276,13 +286,30 @@ ul {
 
 #sign-up {
   clear: left;
-  height: 100px;
+  height: 130px;
   width: 960px;
   background: #f9e42e;
   padding: 20px;
   text-align: center;
   vertical-align: middle;
 }
+
+.button {
+    position: relative;
+    top: 15px;
+    border-radius: 5px;
+    border: black solid 1px;
+    font-weight: 800;
+    padding: 12px 0;
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle; 
+    margin: 0 auto;
+  }
 
 footer {
   height: auto;
@@ -297,7 +324,6 @@ footer {
 
 footer .logo {
   font-size: 48px;
-  font-weight: 800;
   color: #f9e42e;
   text-align: center;
   width: 960px;
