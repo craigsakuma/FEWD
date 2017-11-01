@@ -50,26 +50,277 @@ body {
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
+     margin-left: 200px;
+     margin-right: 200px;
 }
 
+.button {
+    border-radius: 5px;
+    border: black solid 1px;
+    font-weight: 800;
+    padding: 12px 0;
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle; 
+    margin: 0 auto;
+  }
+
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+
+.blue {  
+  background: #033048;
+  color: #fff;
+}
+
+.gray {
+  background-color: #e3e7ed; 
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+
 /* Center the container */
 #container {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+* {
   width: 960px;
   margin: auto;
 }
 
-header {
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
 
+h2 {
+  font-size: 40px;
+  width: auto;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 640px;
+  margin-bottom: 10px;
+}
+
+
+header {
+  height: auto;
+  width: 960px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid black;
+  background-color: #033048;
+  text-align: left;
+  display: inline-block
+}
+
+header .logo{
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 20px;
+  padding: 40px;
+}
+
+#nav{
+  display: inline;
+}
+
+#nav a {
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+main {
+  position: relative;
+  height: auto;
+  width: 720px;
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: #e3e7ed;
+  margin: auto;
+  float: left;
+}
+
+.article {
+  height: auto;
+  width: 700px;
+  padding: 10px; 
+  text-align: left;
+  margin: auto;
+  background-color: #e3e7ed;
+  padding-left: 60px;
+  padding-top: 50px;
+}
+
+p {
+  width: 640px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+
+.read-more {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+h2 .title {
+  font-size: 24px;
+  width: 640px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+main img {
+  width: 640px;
+  padding: 0px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+aside {
+  height: auto;
+  width: 240px;
+  padding: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  float: left;
+  margin: auto;
+
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0px;
+  padding-top: 20px;
+}
+
+.categories {
+  color: #121212;
+  text-align: left;
+  width: inherit;
+  padding-top: 20px; 
+}
+
+.about {
+  color: #121212;
+  text-align: left;
+  width: 240px;  
+  padding-top: 40px; 
+}
+
+.about p {
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+.learn-more {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0px;
+}
+
+
+
+.ad {
+  color: #121212;
+  text-align: left;
+  width: 240px;
+  padding: 0px;
+  padding-top: 20px;
+
+
+}
+
+.ad img{
+  width: 200px;
+  padding: 5px;
+  margin: auto;
+  margin-right: 10px;
+}
+
+
+#sign-up {
+  clear: left;
+  height: 100px;
+  width: 960px;
+  background: #f9e42e;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 footer {
+  height: auto;
+  width: 960px;
+  padding: 10px;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+
+footer .logo {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f9e42e;
+  text-align: center;
+  width: 960px;
+  margin-top: 40px;
+}
+
+footer a img {
+  padding: 25px;
+  height: auto;
+  width: auto;
 
 }
+
+footer p {
+  width: 960px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
