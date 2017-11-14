@@ -1,4 +1,36 @@
-h4:hover {
-	background-color: yellow;
+* {
+	font-family: helvetica;
 }
 
+body {
+	background-color: lightgray;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+	color: black;
+	font-weight: 400;
+	margin-left: 5%;
+	margin-bottom: 1%;
+}
+
+h4:hover {
+	color: blue;
+	font-weight: 800;
+}
+
+p {
+	margin: 1% 5% 1% 5%;
+	font-weight: 600;
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+
+#faq {
+	margin: 5%;
+	background-color: white;
+	border: 1px solid black;
+}
