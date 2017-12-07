@@ -371,7 +371,7 @@ footer p {
   }
   .post {
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .post h2 {
     font-size: 28px;
@@ -421,7 +421,9 @@ footer p {
     text-align: center;
   }
 
-
+  aside>img {
+    width: 60px;
+  }
 
   footer {
     padding: 40px 0 30px;
