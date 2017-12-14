@@ -19,7 +19,7 @@
 <body class="container">
 
 <!-- nav bar -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light">
+	<nav class="navbar navbar-expand-md navbar-light">
 	  <a class="navbar-brand" href="#"><img src="images/quantsprout_logo.jpg" height=80></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -40,32 +40,77 @@
 	</nav>
 
 
-
-
-
-
-
 <!-- Exercise Instructions -->
 	<section class="row">	
-		<div class="col-sm-4 jumbotron">
-  			<h4 class="display-6">Exercise #1</h1>
-  			<p class="lead">What are the total sales by Month for laptops in North America?</p>
-  			<p class="lead">
-    			<a class="btn btn-primary btn-lg" href="#" role="button">Previous</a>
-    			<a class="btn btn-primary btn-lg" href="#" role="button">Next</a>
-  			</p>
+		<div class="col-sm-5">
+  			<div class="jumbotron" id="exercise-prompt" >
+	  			<h4 class="display-6" id="exercise-header">Exercise #1</h1>
+	  			<p class="lead" id="exercise-details">What are the total sales for laptops?</p>
+	  			<p class="lead">
+	    			<a class="btn btn-primary btn-lg" id="previous" href="#" role="button">Previous</a>
+	    			<a class="btn btn-primary btn-lg" id="next" href="#" role="button">Next</a>
+	  			</p>
+			</div>
+			<div>
+			 	<nav class="nav nav-tabs" id="myTab" role="tablist">
+					<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Data Tables</a>
+					<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Solutions</a>
+					<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Help</a>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+						<table class="data-table">
+						  <p class="table-name">Sales</h5>
+						  <tr>
+						    <th>Field</th>
+						    <th>Data Type</th> 
+						  </tr>
+						  <tr>
+						    <td>trans_id</td>
+						    <td>integer (primary key)</td>
+						  </tr>
+						  <tr>
+						    <td>sales</td>
+						    <td>float (10,2)</td>
+						  </tr>
+						  <tr>
+						    <td>product_category</td>
+						    <td>varchar(255)</td>
+						  </tr>						  
+						  <tr>
+						    <td>region</td>
+						    <td>varchar(255)</td>
+						  </tr>
+						  <tr>
+						    <td>date</td>
+						    <td>timestamp</td>
+						  </tr>
+						</table>
+					</div>
+					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+						<h4>Code:</h4>
+						<p class="code">
+							SELECT * <br>
+							FROM Table <br>
+							WHERE date > '2017-01-01' and product_category = 'laptop'
+						</p>
+						<h4>Video:</h4>
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/yvAsUmUctCE?controls=0">
+						</iframe>
+					</div>
+					<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 
-  			<hr class="my-4">
-  			<p>Yada yada yada...</p>
+
+					</div>
+				</div>
+			 </div>
 		</div>
 
-
-
 <!-- Text Editor for Code -->
-		<div class="col-sm-8">
+		<div class="col-sm-7">
 			<div class="form-group">
-				<label for="comment">Enter your code:</label>
-				<textarea class="form-control editor" rows="10" id="comment" contenteditable="true">Enter your code here...</textarea>
+				<label>Enter your code:</label>
+				<div class="form-control editor" rows="10" id="comment" contenteditable="true">Enter your code here...</span></div>
 			</div>
 
 			<div>  		
@@ -76,8 +121,8 @@
 
 
 <!-- Results -->
+			<p>Results:</p>
 			<div class="jumbotron">
-  			<h4 class="display-6">Results</h1>
   			<p class="lead">Great Job!!!  Correct Answer!!!</p>
   			<p>Yada, yada, yada...</p>
 			</div>

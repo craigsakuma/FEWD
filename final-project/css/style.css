@@ -1,13 +1,57 @@
-.editor {
-/*    width: 400px;
-    height: 100px;
-    padding: 10px;
-    background-color: #444;
+.editor, .editor:focus {
+    height: 150px;
+    font-family: monospace;
     color: white;
-    font-size: 14px;
-*/    font-family: monospace;
+    background-color: #272822;
 }
   
 .statement {
-    color: orange;
+    color: #FD971F;
+}
+
+.navbar {
+	/*background-color: white;*/
+}
+
+#exercise-prompt {
+	padding: 1em;
+}
+
+
+.tab-pane {
+
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+.code {
+	font-family: monospace;
+}
+
+
+.table-name {
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+th {
+	font-weight:700;
+	background-color: #e9ecef;
+}
+
+th, td {
+	border: 1px solid darkgray;
+	padding-left: 5px;
 }
